@@ -1,0 +1,27 @@
+*{ /* zerar tudo */
+    margin: 0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+}
+h1{
+    background-color: yellow;
+}
+.box{ /* seletor do tipo classe */
+    border: 2px solid blue;
+    padding:20px;
+    width: 200px;
+    margin:auto;
+}
+#exemplos{
+    border: 3px groove darkred;
+    margin:20px;
+    padding:20px;
+}
+p{
+    text-align: center;
+}
+#exemplos ul{
+    list-style: none;
+    text-align: center;
+}
