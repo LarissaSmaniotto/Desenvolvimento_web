@@ -1,0 +1,35 @@
+//Escreva um procedimento que recebe as 3 notas de um aluno por parâmetro e uma letra. Se a letra for 
+A o procedimento calcula a média aritmética das notas do aluno, se for P, a sua média ponderada
+(pesos: 5, 3 e 2) e se for H, a sua média harmônica. A média calculada também deve retornar por
+parâmetro. 
+
+#include <stdio.h>
+
+// Procedimento para calcular a média com base na letra fornecida
+void calcularMedia(double nota1, double nota2, double nota3, char letra, double *media) {
+    if (letra == 'A') {
+        *media = (nota1 + nota2 + nota3) / 3.0; 
+        // Média aritmética
+    } else if (letra == 'P') {
+        *media = (5.0 * nota1 + 3.0 * nota2 + 2.0 * nota3) / 10.0; 
+        // Média ponderada (pesos: 5, 3 e 2)
+    } else if (letra == 'H') {
+        *media = 3.0 / ((1.0 / nota1) + (1.0 / nota2) + (1.0 / nota3)); 
+        // Média harmônica
+    } else {
+        printf("Letra inválida. Por favor, use 'A' para média aritmética, 'P' para média ponderada ou 'H' para média harmônica.\n");
+        *media = -1.0; // Valor inválido
+    }
+}
+
+int main() {
+    double nota1, nota2, nota3, media;
+    char letra;
+
+    printf("Digite as 3 notas do aluno: ");
+    scanf("%lf %lf %lf", &nota1, &nota2, &nota3);
+
+    printf("Digite a letra correspondente (A para média aritmética, P para média ponderada, H para média harmônica): ");
+    scanf(" %c", &letra);
+
+    calcularMedia(nota1, nota2
