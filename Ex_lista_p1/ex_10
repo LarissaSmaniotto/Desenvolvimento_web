@@ -1,0 +1,27 @@
+// Faça uma função que recebe um valor inteiro e verifica se o valor é par ou ímpar. A
+// função deve retornar um valor booleano.
+
+#include <stdio.h>
+
+// Função para verificar se um valor é par ou ímpar
+int ehPar(int valor) {
+    if (valor % 2 == 0) {
+        return 1; // Verdadeiro (par)
+    } else {
+        return 0; // Falso (ímpar)
+    }
+}
+
+int main() {
+    int numero;
+    printf("Digite um valor inteiro: ");
+    scanf("%d", &numero);
+
+    if (ehPar(numero)) {
+        printf("O valor é par.\n");
+    } else {
+        printf("O valor é ímpar.\n");
+    }
+
+    return 0;
+}

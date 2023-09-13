@@ -1,0 +1,27 @@
+// Faça uma função que recebe um valor inteiro e verifica se o valor é positivo ou
+// negativo. A função deve retornar um valor booleano.
+
+#include <stdio.h>
+
+// Função para verificar se um valor é positivo ou negativo
+int ehPositivo(int valor) {
+    if (valor >= 0) {
+        return 1; // Verdadeiro (positivo)
+    } else {
+        return 0; // Falso (negativo)
+    }
+}
+
+int main() {
+    int numero;
+    printf("Digite um valor inteiro: ");
+    scanf("%d", &numero);
+
+    if (ehPositivo(numero)) {
+        printf("O valor é positivo.\n");
+    } else {
+        printf("O valor é negativo.\n");
+    }
+
+    return 0;
+}

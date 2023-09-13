@@ -1,34 +1,27 @@
-// Faça um procedimento que recebe por parâmetro os valores necessário para o 
-//cálculo da fórmula de báskara e retorna, também por parâmetro, as suas raízes, caso seja possível calcular.
+// Faça uma função que recebe por parâmetro o tempo de duração de uma fábrica
+// expressa em segundos e retorna também por parâmetro esse tempo em horas,
+// minutos e segundos
 
 #include <stdio.h>
 
-void calcularBhaskara(double a, double b, double c, double *raiz1, double *raiz2) {
-    double discriminante = (b * b) - (4 * a * c);
-    // Calculamos o discriminante da equação quadrática usando a fórmula b^2 - 4ac.
-
-    if (discriminante >= 0) {
-        *raiz1 = (-b + sqrt(discriminante)) / (2 * a);
-        *raiz2 = (-b - sqrt(discriminante)) / (2 * a);
-    } else {
-        *raiz1 = *raiz2 = 0; // Define as raízes como 0 se o discriminante for negativo
-    }
+void converterTempo(int duracaoSegundos, int *horas, int *minutos, int *segundos) {
+    *horas = duracaoSegundos / 3600; // 1 hora = 3600 segundos
+    duracaoSegundos %= 3600;
+    *minutos = duracaoSegundos / 60; // 1 minuto = 60 segundos
+    *segundos = duracaoSegundos % 60;
 }
 
 int main() {
-    double a, b, c, raiz1, raiz2;
+    int duracaoSegundos, horas, minutos, segundos;
 
-    printf("Digite os coeficientes a, b e c da equação quadrática (ax^2 + bx + c = 0):\n");
-    scanf("%lf %lf %lf", &a, &b, &c);
+    printf("Digite o tempo de duração da fábrica em segundos: ");
+    scanf("%d", &duracaoSegundos);
 
-    calcularBhaskara(a, b, c, &raiz1, &raiz2);
+    converterTempo(duracaoSegundos, &horas, &minutos, &segundos);
 
-    if (raiz1 == 0 && raiz2 == 0) {
-        printf("Não é possível calcular as raízes reais.\n");
-    } else {
-        printf("Raiz 1: %.2lf\n", raiz1);
-        printf("Raiz 2: %.2lf\n", raiz2);
-    }
+    printf("Tempo em horas: %d\n", horas);
+    printf("Tempo em minutos: %d\n", minutos);
+    printf("Tempo em segundos: %d\n", segundos);
 
     return 0;
 }

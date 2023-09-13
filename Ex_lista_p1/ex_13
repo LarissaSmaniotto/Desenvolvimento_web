@@ -1,0 +1,37 @@
+// Faça um procedimento que recebe 3 valores inteiros por parâmetro e retorna-os
+// ordenados em ordem crescente.
+
+
+#include <stdio.h>
+
+// Função para trocar dois valores inteiros
+void trocar(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+/ Procedimento para ordenar três valores em ordem crescente
+void ordenarTresValores(int *a, int *b, int *c) {
+    if (*a > *b) {
+        trocar(a, b);
+    }
+    if (*a > *c) {
+        trocar(a, c);
+    }
+    if (*b > *c) {
+        trocar(b, c);
+    }
+}
+int main() {
+    int num1, num2, num3;
+
+    printf("Digite três números inteiros: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    ordenarTresValores(&num1, &num2, &num3);
+
+    printf("Números ordenados em ordem crescente: %d %d %d\n", num1, num2, num3);
+
+    return 0;
+}

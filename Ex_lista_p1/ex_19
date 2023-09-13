@@ -1,0 +1,30 @@
+//20. Faça um procedimento que recebe, por parâmetro, um valor N e calcula e escreve
+//a taboada de 1 até N. Mostre a tabuada na forma:
+//1 x N = N
+//2 x N = 2N
+//...
+//N x N = N2
+
+#include <stdio.h>
+
+// Procedimento para calcular e imprimir a taboada de 1 até N
+void taboada(int N) {
+    for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= N; j++) {
+            printf("%d x %d = %d\n", i, j, i * j);
+        }
+        printf("\n"); // Adiciona uma linha em branco após cada taboada
+    }
+}
+
+int main() {
+    int N;
+
+    printf("Digite um valor N: ");
+    scanf("%d", &N);
+
+    taboada(N);
+
+    return 0;
+}
+

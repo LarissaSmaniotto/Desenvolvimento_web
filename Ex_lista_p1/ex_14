@@ -1,0 +1,45 @@
+//Faça um procedimento que recebe, por parâmetro, a hora de inicio e a hora de
+//término de um jogo, ambas subdivididas em 2 valores distintos: horas e minutos. O
+//procedimento deve retornar, também por parâmetro, a duração do jogo em horas e
+//minutos, considerando que o tempo máximo de duração de um jogo é de 24 horas e
+//que o jogo pode começar em um dia e terminar no outro.
+
+
+
+#include <stdio.h>
+
+// Procedimento para calcular a duração do jogo
+void calcularDuracaoJogo(int horaInicio, int minutoInicio, int horaTermino, int minutoTermino, int *duracaoHoras, int *duracaoMinutos) {
+    // Calcula o total de minutos de início e término
+    int minutosInicio = horaInicio * 60 + minutoInicio;
+    int minutosTermino = horaTermino * 60 + minutoTermino;
+
+    // Calcula a diferença de minutos
+    int diferencaMinutos = minutosTermino - minutosInicio;
+
+    // Verifica se o jogo ultrapassa a marca de 24 horas
+    if (diferencaMinutos < 0) {
+        diferencaMinutos += 24 * 60; // Adiciona 24 horas em minutos
+    }
+
+    // Calcula as horas e minutos da duração do jogo
+    *duracaoHoras = diferencaMinutos / 60;
+    *duracaoMinutos = diferencaMinutos % 60;
+}
+
+int main() {
+    int horaInicio, minutoInicio, horaTermino, minutoTermino;
+    int duracaoHoras, duracaoMinutos;
+
+    printf("Digite a hora de início (hh mm): ");
+    scanf("%d %d", &horaInicio, &minutoInicio);
+
+    printf("Digite a hora de término (hh mm): ");
+    scanf("%d %d", &horaTermino, &minutoTermino);
+
+    calcularDuracaoJogo(horaInicio, minutoInicio, horaTermino, minutoTermino, &duracaoHoras, &duracaoMinutos);
+
+    printf("Duração do jogo: %d horas e %d minutos\n", duracaoHoras, duracaoMinutos);
+
+    return 0;
+}

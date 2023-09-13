@@ -9,7 +9,7 @@ double calcularVolumeEsfera(double raio) {
         return -1.0; // Retornando um valor negativo para indicar erro
     }
 
-    double volume = (4.0 / 3.0) * 3.14159265358979323846 * raio * raio * raio;
+    double volume = (4.0 / 3.0) * 3.14 * raio * raio * raio;
     return volume;
     
     // raio elevado ao cubo,  (4/3) * π * raio^3.

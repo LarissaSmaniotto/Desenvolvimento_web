@@ -1,0 +1,42 @@
+// Faça uma função que verifique se um valor é perfeito ou não. Um valor é dito perfeito
+// quando ele é igual a soma dos seus divisores excetuando ele próprio. (Ex: 6 é perfeito,
+// 6 = 1 + 2 + 3, que são seus divisores). A função deve retornar um valor booleano.
+
+#include <stdio.h>
+
+    int ehNumeroPerfeito(int num) {
+        if (num <= 0) {
+            return 0;  // Números negativos e zero não são perfeitos
+        }
+    
+        int somaDivisores = 0;
+    
+        // Percorre todos os possíveis divisores de 1 até num/2
+        for (int divisor = 1; divisor <= num / 2; divisor++) {
+            if (num % divisor == 0) {
+                somaDivisores += divisor;
+            }
+        }
+    
+        // Verifica se a soma dos divisores é igual ao número original
+        if (somaDivisores == num) {
+            return 1;  // É um número perfeito
+        } else {
+            return 0;  // Não é um número perfeito
+        }
+    }
+    
+    int main() {
+        int numero;
+        printf("Digite um número para verificar se é perfeito: ");
+        scanf("%d", &numero);
+    
+        if (ehNumeroPerfeito(numero)) {
+            printf("%d é um número perfeito.\n", numero);
+        } else {
+            printf("%d não é um número perfeito.\n", numero);
+        }
+    
+        return 0;
+    }
+    

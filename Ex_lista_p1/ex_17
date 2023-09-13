@@ -1,0 +1,44 @@
+// uma função que leia um número não determinado de valores positivos e
+//retorna a média aritmética dos mesmos
+
+#include <stdio.h>
+
+// Função para calcular a média aritmética de valores positivos
+float calcularMediaValoresPositivos() {
+    int totalValores = 0;
+    float somaValores = 0.0;
+    float valor;
+
+    printf("Digite os valores positivos (para encerrar, digite um valor negativo):\n");
+
+    while (1) {
+        printf("Digite um valor: ");
+        scanf("%f", &valor);
+
+        if (valor < 0) {
+            break; // Encerra a entrada de dados quando um valor negativo é inserido
+        }
+
+        totalValores++;
+        somaValores += valor;
+    }
+
+    if (totalValores > 0) {
+        float media = somaValores / totalValores;
+        return media;
+    } else {
+        return 0.0; // Retorna 0 se nenhum valor positivo for inserido
+    }
+}
+
+int main() {
+    float media = calcularMediaValoresPositivos();
+
+    if (media > 0) {
+        printf("A média dos valores positivos é: %.2f\n", media);
+    } else {
+        printf("Nenhum valor positivo foi inserido.\n");
+    }
+
+    return 0;
+}
