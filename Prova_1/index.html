@@ -4,17 +4,16 @@
     <title>Cantinho da PIZZA</title>
     <style>
         body {
-            background-image: url('pizza2.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
+            background-image: url('pizzainicial.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            text-align: center; /* Centraliza todo o texto na página */
         }
 
-        /* Estilos adicionais para o cabeçalho e o menu, se necessário */
         header {
-            text-align: center;
-            background-color: rgba(139, 121, 121, 0.824);
-            color: white; /* Define a cor do texto para branco */
-            padding: 10px; /* Adicione um espaço interno ao cabeçalho */
+            background-color: rgba(245, 197, 130, 0.993);
+            color: white; 
+            padding: 5px; 
         }
 
         nav ul {
@@ -29,25 +28,49 @@
 
         /* Estilos para os links */
         nav a {
-            color: white; /* Define a cor do link para branco */
-            font-size: 18px; /* Aumenta o tamanho da fonte */
-            text-decoration: none; /* Remove a sublinhado padrão dos links */
+            color: rgb(254, 180, 6); 
+            font-size: 20px;
+            text-decoration: none; 
+        }
+
+        /* Estilos para o parágrafo */
+        .texto-fora-header {
+            font-size: 18px;
+            margin-top: 20px;
+            text-align: left; /* Alinha o texto à esquerda dentro do parágrafo */
+            margin-left: auto; /* Centraliza horizontalmente o parágrafo */
+            margin-right: auto; /* Centraliza horizontalmente o parágrafo */
+            max-width: 800px; /* Define a largura máxima do parágrafo para evitar que ele fique muito largo */
+            color: rgb(245, 245, 248); /* Cor do texto */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>CANTINHO DA PIZZA</h1>
-        <h1>Seja bem-vindo!!</h1>
-    </header>
     <nav>
         <ul>
+            <li><a href="index.html"> Página inicial</a></li>
             <li><a href="CardapioPIZZA.html"> Cardapio de Pizza</a></li>
             <li><a href="CardapioBEBIDAS.html">Cardapio de Bebidas</a></li>
             <li><a href="Pedido.html">Faca seu Pedido</a></li>
             <li><a href="Lazer.html"> Cantinho do Lazer</a></li>
-           
-        </ul>
+        </ul> 
+        <header>
+            <h1 style="font-size: 40px;">CANTINHO DA PIZZA</h1>
+            <h1 style="font-size: 36px;">Seja bem-vindo!!</h1>
+        </header>
     </nav>
+
+    <!-- Texto fora do header -->
+    <p class="texto-fora-header">
+        A Pizza: Uma História Saborosa
+        A pizza, originária de Nápoles no século XVIII, começou como comida humilde para os pobres, 
+        composta por pão achatado, tomate e queijo. A lendária "Pizza Margherita" foi criada em 
+        homenagem à Rainha Margherita da Itália em 1889, com suas cores representando a bandeira 
+        italiana. Após a Segunda Guerra Mundial, a pizza ganhou popularidade global, resultando em 
+        inúmeras variações, das tradicionais às exóticas. Ela até viajou para o espaço, servida aos
+        astronautas na Estação Espacial Internacional. A história da pizza é uma jornada deliciosa
+        que nos ensina como sabores simples podem conquistar o mundo.
+        Buon appetito!!
+    </p>
 </body>
 </html>
