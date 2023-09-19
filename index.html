@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Formulário -  Aula 02</h1>
+    <form method="POST" action="https://confirmar.animavite.com/processa.php">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label><br>
+            <input disabled id="nome" type="text" name="nome" placeholder="Nome completo">
+            <br>
+            <label for="estadocivil">Estado Civil: </label><br>
+            <select id="estadocivil" name="estadocivil">
+                <option value=""> - Selecione -     </option>
+                <option value="1">Solteiro</option>
+                <option value="2">Casado</option>
+                <option value="3">Divorciado</option>
+                <option value="4">Viúvo</option>
+            </select>
+            <br>
+            <label for="cidade">Cidade: </label><br>
+            <input list="cidade" name="cidade" placeholder="Cidade"><br> 
+            <datalist id="cidade">
+                <option value="São Paulo"></option>
+                <option value="Rio de Janeiro"></option>
+                <option value="Belo Horizonte"></option>
+                <option value="Curitiba"></option>
+                <option value="Porto Alegre"></option>
+            </datalist>
+            <br>
+            <label for="genero-musical">Gênero Musical: </label><br>
+            <input type="radio" name="genero-musical" value="rock">Rock<br>
+            <input type="radio" name="genero-musical" value="pop">Pop<br>
+            <input type="radio" name="genero-musical" value="mpb">MPB<br>
+            <input type="radio" name="genero-musical" value="classica">Clássica<br> 
+            <br>
+            <p>Frutas: </p>
+            <input type="checkbox" id="laranja" name="laranja"><label for="laranja"> Laranja Bahia </label><br>
+            <input type="checkbox" id="banana" name="banana"><label for="banana">Banana</label><br>
+            <input type="checkbox" name="uva">Uva<br>
+            <input type="checkbox" name="manga">Manga<br>
+        </fieldset>
+        <fieldset>
+            <legend>Dados de Login</legend>
+            <label for="email">E-mail:</label><br>
+            <input  id="email" type="email" name="email" placeholder="Melhor e-mail"><br>
+            <label for="senha">Senha:</label><br>
+            <input  id="senha" type="password" name="senha" placeholder="Senha"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Anexos</legend>
+            <label for="satisfacao">Satisfação</label><br>
+            <input type="range" id="satisfacao" name="satisfacao" min="0" max="10" step="2.5"><br>
+            
+            <label for="anexo">Anexo: </label>
+            <input id="anexo" type="file" name="arquivo"  accept="application/pdf">
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+    </form>
+    <h1>Inserindo Mídia</h1>
+    <img src="https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Logo do Google">
+    <br>
+    <img src="foto.jpg" alt="Foto do autor">
+    <br>
+    <img src="imagens/carro.png" alt="Carro">
+    <br>
+    <h2>Inserindo Vídeo e Áudio</h2>
+    <video src="videos/hotel.mp4" controls></video>
+    <br>
+    <audio src="audios/audios.mp3" controls></audio>
+    <br>
+</body> 
+</html>
