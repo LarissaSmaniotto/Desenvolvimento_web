@@ -108,3 +108,8 @@ a::before{
     content: '* ';
     margin-right: 5px;
 }
+.sua-classe {
+    background-image: url('imagemcafe.jpg');
+    background-origin: content-box; 
+  }
+  

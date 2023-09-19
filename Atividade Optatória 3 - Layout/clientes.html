@@ -1,13 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clientes diversos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style>
+        body {
+            background-image: url('img.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: rgb(0, 0, 128);
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ccc;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,7 +80,8 @@
         <a href="clientes.html">Clientes</a> |
         <a href="contato.html">Contato</a> |
     </div>
-    <h1>Clientes</h1>
+
+    <h1>Lista de Clientes</h1>
     <!-- tabela de clientes -->
     <table>
         <tr>
@@ -42,14 +107,14 @@
         <tr>
             <td>José</td>
             <td>11 99999-9999</td>
-            <td>jose@gamil.com</td>
+            <td>jose@gmail.com</td>
         </tr>
         <tr>
             <td>Claudio</td>
             <td>11 99999-9999</td>
-            <td>clau@gamil.com</td>
+            <td>clau@gmail.com</td>
         </tr>
-    </table>      
+    </table>
 </body>
 
 </html>

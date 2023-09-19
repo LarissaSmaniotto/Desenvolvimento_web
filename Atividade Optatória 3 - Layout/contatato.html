@@ -1,35 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clientes Diversos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style>
+        body {
+            background-image: url('img.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: rgb(0, 0, 128);
+        }
+
+        form {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="file"] {
+            border: none;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Página inicial</a></li>
-            <li><a href="clientes.html">Clientes</a></li>
-            <li class="menu"><a href="contato.html">Contato</a>
-                <ul class="submenu">
-                    <li><a href="https://wa.me/+55669999999">Whatsapp</a></li>
-                    <li><a href="mailto:ivanpires@gmail.com?subject=Contato">Email</a></li>
-                </ul> 
-            </li>
-        </ul>
-    </nav>
-    <h1>Contato</h1>
-    <form>
-        <input type="text" placeholder="Nome Completo">
-        <input type="file">
-        <textarea>Digite sua mensagem</textarea>
-    </form>
+    <div>
+        <a href="index.html">Página inicial</a> |
+        <a href="clientes.html">Clientes</a> |
+        <a href="contato.html">Contato</a> |
+    </div>
 
+    <div class="container">
+        <h1>Entre em Contato</h1>
+        <form>
+            <input type="text" placeholder="Nome Completo">
+            <input type="file">
+            <textarea placeholder="Digite sua mensagem"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 </body>
 
 </html>
