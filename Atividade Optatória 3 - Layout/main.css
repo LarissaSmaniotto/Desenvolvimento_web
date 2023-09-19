@@ -1,0 +1,110 @@
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: blueviolet;
+}
+
+/* a:visited{
+    background-color: orange;
+} */
+a:hover {
+    background-color: #008;
+    color: #fff;
+}
+
+a:active {
+    background-color: #0f0;
+    color: #000;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #ccc;
+    color: #800;
+    cursor: pointer;
+}
+
+/* submenu */
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    border:1px solid red;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+li {
+    padding:2px;
+}
+.menu {
+    position: relative;
+}
+li.menu:hover ul.submenu {
+    display: block;
+}
+.submenu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    border: 1px solid #000;
+    padding: 10px;
+    margin:10px;
+    width: fit-content;
+    background-color: white;
+    display: none;
+}
+/* Mais pseudo clases e pseudo elementos */
+/* 
+tr:first-child{
+   border-bottom:2px solid orange;
+}
+tr:last-child{
+    border-bottom:2px solid blue;
+}
+tr:nth-child(4){
+    background-color: aquamarine;
+} */
+
+tr:nth-child(2n){
+    background-color: #ccc;
+}
+
+/* form */
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+form input{
+    margin-bottom: 5px;
+}
+textarea{
+    height:150px;
+}
+input:focus, textarea:focus{
+    background-color: yellow;
+    color: #800;
+}
+a::before{
+    content: '* ';
+    margin-right: 5px;
+}
