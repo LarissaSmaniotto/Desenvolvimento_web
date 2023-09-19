@@ -1,11 +1,17 @@
-/* Reset de Estilos */
+body {
+    background-image: url('artesanato.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}git pull
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos Globais */
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -42,7 +48,7 @@ nav a {
     color: #fff;
 }
 
-/* Botão de Chamada para Ação (CTA) */
+
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
