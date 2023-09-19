@@ -1,0 +1,20 @@
+p, div { /* formata o p e o div */
+    padding: 10px;
+    border: 1px solid red
+}
+
+
+p em{ /* espaço: formata o em dentro do p */
+    background-color: yellow;
+}
+div > span { /* seletor child (somente o filho) */
+    text-decoration: underline;
+}
+
+
+h1 + p { /* seletor adjacentes (irmãos) */
+    color: red;
+}
+h1 ~ p { /* seletor adjacentes (irmãos) */
+    background-color: lime;
+}
