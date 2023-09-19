@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#base{
+    width: 100vw;
+    height: 100vh;
+    border:3px double #000;
+    padding:10px;
+}
+#base h1{
+    padding:20px;
+    border-bottom: 2px solid #333;
+    color: #000;
+    text-align: center;
+    margin-bottom: 1cm;
+}
