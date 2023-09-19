@@ -1,7 +1,7 @@
 
 # Repositório dedicado a disciplina de desenvolvimento web
 <details>
-<summary>&nbsp<h1>Atividade Optatória 3 - Layout<b</h1></summary>
+<summary>&nbsp<h1>Atividade Optatória 3 - PRIMEIRA PARTE<b</h1></summary>
   
 
 #### Atividade opcional sobre construção de layout de um website com CSS.
