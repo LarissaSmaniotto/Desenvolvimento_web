@@ -5,10 +5,6 @@ a {
 a:link {
     color: blueviolet;
 }
-
-/* a:visited{
-    background-color: orange;
-} */
 a:hover {
     background-color: #008;
     color: #fff;
@@ -41,6 +37,12 @@ tr:hover {
     color: #800;
     cursor: pointer;
 }
+h1 {
+    color: rgb(0, 0, 0);
+}
+body{
+    color: rgb(0, 0, 0);
+}
 
 /* submenu */
 ul{
@@ -71,18 +73,6 @@ li.menu:hover ul.submenu {
     background-color: white;
     display: none;
 }
-/* Mais pseudo clases e pseudo elementos */
-/* 
-tr:first-child{
-   border-bottom:2px solid orange;
-}
-tr:last-child{
-    border-bottom:2px solid blue;
-}
-tr:nth-child(4){
-    background-color: aquamarine;
-} */
-
 tr:nth-child(2n){
     background-color: #ccc;
 }
