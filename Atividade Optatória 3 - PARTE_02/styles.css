@@ -1,6 +1,6 @@
 body {
-    background-image: url('trico.jpg');
-    background-size: 0%;
+    background-image: url('novelo.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
 }
