@@ -1,0 +1,31 @@
+body{
+    background-color: #222;
+    color: white;
+    background-image: url('https://images.unsplash.com/photo-1598349326101-fc9e68975a52?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+nav ul{
+     list-style: none;
+     display: flex;
+     font-size:1.5rem;
+        justify-content: center;
+}
+nav ul li{
+    margin-right: 2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: #ffff00;
+}
+main{
+    text-align: center;
+}
