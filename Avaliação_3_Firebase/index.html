@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Artigos de Festas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loja de Artigos de Festas.</h1>
+        
+        <div id="add-item-form" class="form-container">
+            <h2>Adicionar Novo Item</h2>
+            <form>
+                <label for="item-name">Nome do Item:</label>
+                <input type="text" id="item-name" required>
+
+                <label for="item-price">Preço:</label>
+                <input type="number" id="item-price" required>
+
+                <label for="item-description">Descrição:</label>
+                <textarea id="item-description" required></textarea>
+
+                <button type="button" onclick="addItem()">Adicionar Item</button>
+            </form>
+        </div>
+
+        <div id="party-items" class="items-container"></div>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database.js"></script>
+
+</body>
+</html>
